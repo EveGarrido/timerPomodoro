@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Pomodoro from "./components/pomodoro";
+import Pomodoro from "./components/Pomodoro";
 import SmallBreak from "./components/SmallBreak";
 import LargeBreak from "./components/LargeBreak";
 import ding from "./assets/BELLBOX.mp3";
