@@ -24,9 +24,10 @@ function App() {
     setTimeInSecondsSmallBreak(0);
     setTimeInSecondsPomodoro(0);
     setTimeInSecondsLargeBreak(0);
-    setIsActiveDing(false);
+    setIsActiveDing(false);//controla que no suene el timbre al cumplir la condición de llegar a 0, sin darle start previamente//
   };
 
+  //Impide darle start a los 3 cronometros al mismo tiempo
   const disabledButtons = () => {
     if (isActivePomodoro) {
       setIsActiveSmallBreak(false);
