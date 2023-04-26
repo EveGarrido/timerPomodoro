@@ -69,6 +69,7 @@ const SmallBreak = ({
           min={0}
           max={1800}
           onChange={(e) => setTimeInSeconds(e.target.value)}
+          disabled={active}
         />
         <input
           type="number"
@@ -77,6 +78,7 @@ const SmallBreak = ({
           max={1800}
           onChange={(e) => setTimeInSeconds(e.target.value)}
           className="input-number"
+          disabled={active}
         />
       </div>
       <p>

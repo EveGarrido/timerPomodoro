@@ -68,6 +68,7 @@ const Pomodoro = ({
           min={0}
           max={5400}
           onChange={(e) => setTimeInSeconds(e.target.value)}
+          disabled={active}
         />
         <input
           type="number"
@@ -76,6 +77,7 @@ const Pomodoro = ({
           max={5400}
           onChange={(e) => setTimeInSeconds(e.target.value)}
           className="input-number"
+          disabled={active}
         />
       </div>
       <div className="buttons-inputs">
